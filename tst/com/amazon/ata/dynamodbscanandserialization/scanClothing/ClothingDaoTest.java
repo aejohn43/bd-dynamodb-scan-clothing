@@ -72,7 +72,6 @@ class ClothingDaoTest {
             filterExpressionField);
         String expectedFilterExpressionOption2 = String.format("%s = clothingType", filterExpressionField,
             filterExpressionField);
-
         assertNotNull(scanExpression.getFilterExpression(), "Expected the scan expression to contain a filter" +
             " expression");
         assertTrue(Pattern.matches(expectedFilterExpressionOption1, scanExpression.getFilterExpression()) ||
